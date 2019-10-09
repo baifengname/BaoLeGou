@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册页</title>
+		<style>
+			*{margin:0;padding:0;}
+			b,strong,h1,h2,h3,h4,h5,h6{font-weight:normal;}
+			a,u{text-decoration:none;}
+			i,em{font-style:normal;}
+			ul,ol,li{list-style:none;}
+			.dh{
+				height:100px;
+			}
+			.dh img{
+				margin-left:180px;
+			}
+			.zjz p{
+				display:block;
+				width:130px;
+				height:20px;
+				padding:20px 20px;
+			}
+			.dk{
+				width:1000px;
+				height:370px;
+				margin:0 auto;
+				border:3px solid #ccc;
+				
+				
+			}
+			.dk table{
+				width:560px;
+				height:370px;
+				float:left;
+				
+				
+			}
+			.login_right{
+				width:300px;
+				height:370px;
+				float:left;
+				position:absolute;
+				top:100px;
+				right:240px;	
+			}
+			.login_right h5{
+				margin:25px 50px;
+			}
+			.login_right p{
+				display:block;
+				margin-left:25px;
+			}
+			.dl{
+				width:100px;
+				height:40px;
+				background:#1a6ccf;
+				margin:30px 65px;
+			}
+			.dl a{
+				line-height:40px;
+				margin:15px 15px;
+				color:#fff;
+			}
+			.login_right h6{
+				margin-left:30px;
+			}
+			.qqtp img{
+				margin:40px 50px;
+			}
+			.db{
+							 width:460px;
+							 height:20px;
+							 margin:0 auto;
+							 margin-top:50px;
+			}
+			.login_btn{
+				margin-left:50px;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="dh">
+			<a href="index.html"><img src="imgs/806349896_logo.gif" alt=""></a>
+		</div>
+		<div class="dk">
+			<table>
+		                <tr>
+		                  <td colspan="3"><h4>填写用户注册信息</h4></td>
+		                </tr>
+		                <tr>
+		                  <th>帐号: </th>
+		                  <td><input type="text" id="reg_qq" name="reg_qq" class="text width8" /></td>
+		                  <td class="padding3 fontColor4"><label class="field_notice">您要注册的帐号</label></td>
+		                </tr>
+		                <tr>
+		                  <th>密码:  </th>
+		                  <td><input type="password" id="reg_pass" name="reg_pass" class="text width8" />
+		                    </th>
+		                  <td class="padding3 fontColor4"><label class="field_notice">您的登录密码</label></td>
+		                </tr>
+		                <tr>
+		                  <th>确认密码: </th>
+		                  <td><input type="password" id="reg_pass_confirm" name="reg_pass_confirm" class="text width8" /></td>
+		                  <td class="padding3 fontColor4"><label class="field_notice">再次输入您的密码</label></td>
+		                </tr>
+						   <th>邮箱: </th>
+						                  <td><input type="text" id="reg_email" name="reg_email" class="text width8" /></td>
+						                  <td class="padding3 fontColor4"><label class="field_notice">找回密码唯一途径,请务必输入正确</label></td>
+						                </tr>
+						       
+						                    
+						                  <td colspan="2"><input type="hidden" name="reg" value="yes"><input type="submit" name="sub" id="sub" value="免费注册" class="login_btn" title="" /></td>
+						                </tr>
+						              </table>
+						            </form>
+						          </div>
+				</table>
+			 <div class="login_right">
+				 <h5>提示:</h5>
+				 <p>如果已经拥有账号</p>
+				 <div class="dl">
+					 <a href="dl.html">立即登录</a>
+				 </div>
+				 <h6>您还可以:</h6>
+				<div class="qqtp">
+					<img src="imgs/qqtp_03.jpg" alt="">
+				</div>
+			 </div>
+	  </div>
+	  <div class="db">
+	  	<img src="imgs/db_03.jpg" alt="">
+	  </div>
+	</body>
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script>
+		$('#sub').click(function(){
+			let reg_qq = $('#reg_qq').val();
+			let reg_pass =$('#reg_pass').val();
+			let reg_pass_confirm=$("#reg_pass_confirm").val();
+			let reg_email=$("#reg_email").val();
+			let sub = $('sub').val();
+
+			if(reg_qq=="")
+			{
+			alert("请输入注册帐号");
+			$("#reg_qq").focus();
+			return false;
+			}
+			else if(reg_qq.length<5){
+			alert("注册帐号长度至少为5位!");
+			$("#reg_qq").focus();
+			return false;
+			}
+			else if(reg_pass=="")
+			{
+			alert("请输入密码!");
+			$("#reg_pass").focus();
+			return false;
+			}
+			else if(reg_pass_confirm=="")
+			{
+			alert("请重复输入密码!");
+			$("#reg_pass_confirm").focus();
+			return false;
+			}
+			else if(reg_pass_confirm!=reg_pass)
+			{
+			alert("两次密码不一致，请重新输入");
+			$("#reg_pass_confirm").focus();
+			return false;
+			}
+			else if(reg_email=="")
+			{
+			alert("请输入邮箱!");
+			$("#reg_email").focus();
+			return false;
+			}
+			else if(!reg_email.match(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/)){
+			alert("邮箱格式错误,正确格式比如:19646618@qq.com");
+			$("#reg_email").focus();
+			return false;
+			}
+			 if(!reg_qq && !reg_pass){
+			 	alert('不能为空!');
+			 	return;
+			}
+			let cookieStr =$.cookie('zc') ? $.cookie('zc') : '';
+			let cookieObj =convertCookieStrToCookieObj(cookieStr);
+			if(reg_qq in cookieObj){
+				alert('用户名已存在!');
+				return;
+			}
+			else{
+				cookieObj[reg_qq] = reg_pass;
+			}
+			$.cookie('zc',JSON.stringify(cookieObj),{
+				expires:7,
+				path:'/'
+			});
+		})
+		function convertCookieStrToCookieObj(str){
+			if(!str){
+				return{};
+			}
+			return JSON.parse(str);
+		}
+	</script>
+</html>

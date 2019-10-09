@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>列表页</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <div id="navTop">
+        <div id="top">
+            <div id="topLeft" style="margin: 0;line-height: 25px;">
+                <a style="margin-left:10px;" href="dl.html" >用户登录 </a> <a style="margin-left:10px;" >免费注册 </a>
+                &nbsp;<a style="margin-left:10px;"  target="_blank"><img style="vertical-align: middle;" border=0
+                        src=""></a>
+
+
+                &nbsp;<a style="margin-left:10px;"  target="_blank"><img style="vertical-align: middle;" border=0
+                        src=""></a>
+
+
+
+
+
+            </div>
+            <ul id="topRight" style="line-height: 25px;">
+                <li style=" margin-right: 8px;">
+                    <a href="javascript:void(0)" onclick="SetHome(this,window.location)" style="color: #757575"
+                        title="将本站设为首页">设为首页</a>
+                </li>
+                <li style="margin-right: 8px;">
+                    <a href="javascript:void(0)" onclick="shoucang(document.title,window.location)"
+                        style="color: #757575" title="加入收藏，方便下次打开">加入收藏</a>
+                </li>
+                <li>
+                    <a  href="gwc.html" target="_blank" style="color: #8da7cb" title="联系我帮你解答">遇到购物问题? 联系我 &gt;</a>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!-- 搜索栏 -->
+    <div id="headNav">
+        <div id="header" style="padding-bottom: 10px;" _hover-ignore="1">
+            <a href="index.html"
+                style="width: 400px; height: 80px;display: inline-block;    background-size: inherit;    background: url('imgs/806349896_logo.gif')left top no-repeat;margin-top: -7px;"
+                _hover-ignore="1">
+            </a>
+            <div id="showList">
+                <div id="search">
+                    <form action="/index.do">
+                        <input type="text" value="" name="qserach" placeholder="好宝贝 等你搜">
+                        <button type="submit">搜索</button>
+                    </form>
+                </div>
+
+                <dl>
+                    <dt class="rg">1</dt>
+                </dl>
+                <dl>
+                    <dt class="zy">2</dt>
+                </dl>
+                <dl>
+                    <dt class="qc">3</dt>
+                </dl>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!-- 分类栏 -->
+    <div id="baner">
+        <div id="nav" style="font-size: 15px;">
+            <a  href="#" class="iconM active" style="padding:8px 27px;"><i class="iconfont"></i><span
+                    style="margin-right: 7px;">网站首页</span>
+            </a>
+            <a  href="#" class=""  style="padding:8px 15px;">领券优惠直播
+            </a>
+
+            <a class=""  style="padding:8px 15px;" _hover-ignore="1">实时跑量</a>
+            <a class=" " style="padding:8px 15px;">超级人气榜</a>
+            <a class=""  style="padding:8px 15px;" _hover-ignore="1">9块9包邮</a>
+            <a class=""  style="padding:8px 15px;" _hover-ignore="1">20元封顶</a>
+            <a class=""  style="padding:8px 15px;" _hover-ignore="1">钜惠券</a>
+        </div>
+    </div>
+	 <div class="lbt" style="width:1200px;margin:0 auto;">
+		 <img src="imgs/lbt.png" alt="">
+	 </div>
+	<div class="cat-wrap main-container">
+	                <div class="cat-list clearfix">
+	
+	                    <ul class="clearfix">
+	                        <li>
+	                            <a
+	                                href="javascript:load_quan_zhibo(&#39;/index.do?tab=umodule&amp;mod=youhuiquan_list&#39;);">全部优惠<b>(15372)</b></a>
+	                        </li>
+	
+	                        <li>
+	                            <a data-page="page=1"
+	                                href="javascript:load_quan_zhibo(&#39;/index.do?tab=umodule&amp;mod=youhuiquan_list&amp;cid=1&#39;);">
+	                                女装<b>(1301)</b>
+	                            </a>
+	                        </li>
+	
+	                        <li>
+	                            <a data-page="page=1"
+	                                href="javascript:load_quan_zhibo(&#39;/index.do?tab=umodule&amp;mod=youhuiquan_list&amp;cid=2&#39;);">
+	                                母婴<b>(1980)</b>
+	                            </a>
+	                        </li>
+	
+	                        <li>
+	                            <a data-page="page=1"
+	                                href="javascript:load_quan_zhibo(&#39;/index.do?tab=umodule&amp;mod=youhuiquan_list&amp;cid=3&#39;);">
+	                                化妆品<b>(1157)</b>
+	                            </a>
+	                        </li>
+	
+	                        <li>
+	                            <a data-page="page=1"
+	                                href="javascript:load_quan_zhibo(&#39;/index.do?tab=umodule&amp;mod=youhuiquan_list&amp;cid=4&#39;);">
+	                                居家<b>(2625)</b>
+	                            </a>
+	                        </li>
+	
+	                        <li>
+	                            <a data-page="page=1"
+	                                href="javascript:load_quan_zhibo(&#39;/index.do?tab=umodule&amp;mod=youhuiquan_list&amp;cid=5&#39;);">
+	                                鞋包配饰<b>(1143)</b>
+	                            </a>
+	                        </li>
+	
+	                        <li>
+	                            <a data-page="page=1"
+	                                href="javascript:load_quan_zhibo(&#39;/index.do?tab=umodule&amp;mod=youhuiquan_list&amp;cid=6&#39;);">
+	                                美食<b>(1675)</b>
+	                            </a>
+	                        </li>
+	
+	                        <li>
+	                            <a data-page="page=1"
+	                                href="javascript:load_quan_zhibo(&#39;/index.do?tab=umodule&amp;mod=youhuiquan_list&amp;cid=7&#39;);">
+	                                文体车品<b>(894)</b>
+	                            </a>
+	                        </li>
+	
+	                        <li>
+	                            <a data-page="page=1"
+	                                href="javascript:load_quan_zhibo(&#39;/index.do?tab=umodule&amp;mod=youhuiquan_list&amp;cid=8&#39;);">
+	                                数码家电<b>(913)</b>
+	                            </a>
+	                        </li>
+	
+	                        <li>
+	                            <a data-page="page=1"
+	                                href="javascript:load_quan_zhibo(&#39;/index.do?tab=umodule&amp;mod=youhuiquan_list&amp;cid=9&#39;);">
+	                                男装<b>(988)</b>
+	                            </a>
+	                        </li>
+	
+	                        <li>
+	                            <a data-page="page=1"
+	                                href="javascript:load_quan_zhibo(&#39;/index.do?tab=umodule&amp;mod=youhuiquan_list&amp;cid=10&#39;);">
+	                                内衣<b>(907)</b>
+	                            </a>
+	                        </li>
+	
+	                    </ul>
+	                </div>
+	
+	
+	
+	            </div>
+	            <div class="tag-wrap main-container clearfix cat-wrap">
+	                <div class="fixed-wrap fl">
+	                    <a href="javascript:load_quan_zhibo(&#39;/index.do?tab=umodule&amp;mod=youhuiquan_list&amp;cid=&#39;);"
+	                        class="tag-fixed active">最新</a>
+	                    <a href="javascript:load_quan_zhibo(&#39;/index.do?tab=umodule&amp;mod=youhuiquan_list&amp;sort=sell&amp;cid=&#39;);"
+	                        class="tag-fixed ">销量</a>
+	                    <a href="javascript:load_quan_zhibo(&#39;/index.do?tab=umodule&amp;mod=youhuiquan_list&amp;sort=Quan_time&amp;cid=&#39;);"
+	                        class="tag-fixed ">有效时间</a>
+	                    <a href="javascript:load_quan_zhibo(&#39;/index.do?tab=umodule&amp;mod=youhuiquan_list&amp;sort=Commission&amp;cid=&#39;);"
+	                        class="tag-fixed ">佣金</a>
+	
+	                    <a href="javascript:load_quan_zhibo(&#39;/index.do?tab=umodule&amp;mod=youhuiquan_list&amp;sort=lql&amp;cid=&#39;);"
+	                        class="tag-fixed ">领券量</a>
+	                    <a href="javascript:load_quan_zhibo(&#39;/index.do?tab=umodule&amp;mod=youhuiquan_list&amp;sort=price&amp;cid=&#39;);"
+	                        class="tag-fixed ">价格</a>
+	
+	                </div>
+	                <div class="goods-pages-page clearfix" style="">
+	                    <span class="pagebtn  pre-page"><a
+	                            href="javascript:load_quan_zhibo(&#39;/index.do?tab=umodule&amp;mod=youhuiquan_list&amp;cid=&amp;sort=&amp;pageid=0&#39;);"></a></span>
+	                    <span class="page-num"><b>1</b>/385</span>
+	                    <span class="pagebtn next-page"><a
+	                            href="javascript:load_quan_zhibo(&#39;/index.do?tab=umodule&amp;mod=youhuiquan_list&amp;cid=&amp;sort=&amp;pageid=2&#39;);"></a></span>
+	                </div>
+	            </div>
+	
+	            <div class="goods-list main-container">
+	                <ul class="clearfix">
+	                    <li class="">
+	                        <a  href="gwc.html" class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li>
+	                    <li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  href="gwc.html" class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li><li class="">
+	                        <a  class="img"
+	                            rel="nofollow" target="_blank">
+	                            <i class="today-new"></i>
+	                            <img src="imgs/O1CN01l771dl1wZWUTKmhId_!!2224826322.jpg_310x310.jpg"
+	                                alt="">
+	                        </a>
+	                        <div class="goods-padding">
+	                            <div class="coupon-wrap clearfix">
+	                                <span class="price"><b><i>￥</i>88.00</b>券后</span>
+	                                <span class="old-price"><i>￥</i>158.00</span>
+	                                <span class="coupon"><em class="quan-left"></em>券<b><i>￥</i>70</b><em
+	                                        class="quan-right"></em></span>
+	                            </div>
+	                            <div class="title">
+	                                <a target="_blank"
+	                                    >【帆布鞋】朴素优雅的高帮帆布鞋</a>
+	                            </div>
+	                            <div class="goods-num-type">
+	
+	                                <div class="goods-type">
+	                                    <i class="tmall" title="天猫"></i> </div>
+	
+	                            </div>
+	                        </div>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	
+	
+		<div id="footer" style="background-color: #373737;height: 190px;width: 100%;border-top: 3px solid #ff3366;margin-top:3500px;">
+	            <div class="footer-wrapper " style="width: 1200px;margin: 0 auto;position: relative;text-align: center">
+	                <img src="imgs/bottom_text.png" alt="" style="border: 0;margin-top: 50px;">
+	                <div class="author" style="    position: absolute;
+	        top: 67px;
+	        left: 990px;
+	        color: #FFFFFF;
+	        font-size: 18px;">by   宝乐购网购商城_特价商城特卖商品</div>
+	                <div class="text" style="color: #a2a2a2; font-size: 16px; margin-top: 33px;">
+	                    &#169; CopyRight&nbsp;&nbsp;2017 &nbsp;<a  target="_blank"
+	                        rel="nofollow" style="color:#a2a2a2;">宝乐购网购商城_特价商城特卖商品</a>
+	                    &nbsp;http://806349896.qqku.com&nbsp;&nbsp;<a  target="_blank"
+	                        rel="nofollow" style="color:#a2a2a2;"></a>
+	                    &nbsp;&nbsp; <a target="_blank"
+	                         style="color: #8da7cb"
+	                        title="^_^亲遇到问题，联系我帮你处理哈">^_^亲遇到问题，联系我帮你处理哈</a>
+	                </div>
+	        </div>
+			<div class="toTop" style="display: none" onclick=" $(&#39;body,html&#39;).animate({scrollTop:0},1000);">
+			    </div>
+	</div>
+	    <!-- js -->
+	    <script src="js/jquery-3.4.1.min.js"></script>
+	    <script src="js/swiper.jquery.min.js"></script>
+	    <script>
+	        var swiper = new Swiper('.swiper-container', {
+	            pagination: '.swiper-pagination',
+	            paginationClickable: true,
+	            nextButton: '.swiper-button-next',
+	            prevButton: '.swiper-button-prev',
+	            spaceBetween: 30
+	        });
+			 $(window).scroll(function () {
+			            if ($(window).scrollTop() > 500) {
+			                $(".toTop").fadeIn(1000);
+			            }
+			            else {
+			                $(".toTop").fadeOut(1000);
+			            }
+			        });
+	    </script>
+	</body>
+	
+	</html>

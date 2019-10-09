@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登录页</title>
+		<style>
+			*{margin:0;padding:0;}
+			b,strong,h1,h2,h3,h4,h5,h6{font-weight:normal;}
+			a,u{text-decoration:none;}
+			i,em{font-style:normal;}
+			ul,ol,li{list-style:none;}
+			.dh{
+				height:100px;
+			}
+			.dh img{
+				margin-left:180px;
+			}
+			.dl{
+				height:330px;
+				
+			}
+			.dlk{
+				width:1000px;
+				height:330px;
+				border:2px solid #ccc;
+				margin-left:180px;
+			}
+			.hydl{
+				width:550px;
+				height:330px;
+				float:left;
+			}
+			.hydl1{
+				width:550px;
+				height:45px;
+				
+			}
+			
+			.hydl1 p{
+				float:left;
+				margin-top:20px;
+				margin-left:10px;
+			}
+			.hydl1 span{
+				float:left;
+				margin-top:20px;
+				margin-left:10px;
+				color:red;
+			}
+			.sz{
+				width:550px;
+				height:200px;
+	
+				float:left;
+			}
+			.sz img{
+				width:82px;
+				height:120px;
+				margin:40px 70px 50px 40px;
+				float:left;
+			}
+			table{
+				width:300px;
+				height:70px;
+			
+				margin-top:20px;
+			}
+			.lj{
+				width:256px;
+				height:56px;
+				float:left;
+				margin-top:20px;
+			}
+			.lk{
+				width:100px;
+				height:42px;
+				background:#1a69c5;
+				margin-left:50px;
+				margin-top:10px;
+				float:left;
+			}
+			.lk a{
+				color:#fff;
+				line-height:42px;
+				margin-left:20px;
+				width:100px;
+				height:41px;
+
+			}
+			.hydl2{
+				width:337px;
+				height:35px;
+				background:green;
+				float:left;
+				margin-top:20px;
+			}
+			.you{
+				width:440px;
+				height:322px;
+		
+				float:right;
+			}
+			.you p{
+				width:440px;
+				height:20px;
+				margin:25px 50px 20px 50px;
+			}
+			.you h5{
+				margin-left:50px;
+			}
+			.qt{
+				width:435px;
+				height:100px;
+			}
+			.qt img{
+				margin:30px 90px 30px 50px;
+			}
+			 .zc{
+				 width:100px;
+				 height:30px;
+				 background:orange;
+				 margin-left:50px;
+			 }
+			 .zc a{
+				 color:#fff;
+				 line-height:30px;
+				 margin-left:10px;
+			 }
+			 .db{
+				 width:460px;
+				 height:20px;
+				 margin:0 auto;
+				 margin-top:50px;
+			 }
+			 .lk input{
+				 width:100px;
+				 height:40px;
+				 background:blue;
+				 color:#fff;
+			 }
+
+		</style>
+	</head>
+	<body>
+		<div>
+			<div class="dh">
+				<a href="index.html"><img src="imgs/806349896_logo.gif" alt=""></a>
+			</div>
+			<div class="dl">
+				<div class="dlk">
+					<div class="hydl">
+						<div class="hydl1">
+							<p>会员登录</p>
+							<span>LOGIN</span>
+						</div>
+						<div class="sz">
+							<img src="imgs/login_left.gif" alt="">
+							<table>
+								<tr>
+									<th>用户名: </th>
+									<td><input type="text" class="text width8" name="userqq" id="userqq"></td>
+
+								</tr>
+								<tr>
+									<th>密&nbsp;&nbsp;&nbsp;码: </th>
+									<td><input type="password" class="text width8" name="userpass" id="userpass"></td>
+								</tr>
+							</table>
+							<div class="lj">
+								<div class="lk">
+									<input type="button" name="sub" id="sub" value="立即登录">
+								</div>
+							</div>
+						</div>
+						<div class="hydl2">
+							<img src="imgs/qq_03.jpg" alt="">
+						</div>
+					</div>
+					<div class="you">
+						<p>友情提示:如果您还不是会员，请注册</p>
+						 <h5>注册之后你就可以</h5>
+						 <div class="qt">
+							 <img src="imgs/tp_03.jpg" alt="">
+							 <div class="zc"><a href="zc.html">免费注册</a></div>
+						 </div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="db">
+				<img src="imgs/db_03.jpg" alt="">
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script>
+		$('#sub').click(function(){
+			let userqq = $('#userqq').val();
+			let userpass =$('#userpass').val();
+			if(!userqq && !userpass){
+				alert('请输入商城账号');
+				return;
+			}
+			let cookieStr =$.cookie('zc') ? $.cookie('zc') : '';
+			let cookieObj =convertCookieStrToCookieObj(cookieStr);
+			if(userqq in cookieObj){
+				if(userpass ===cookieObj[userqq]){
+					location.href = 'index.html';
+					return;
+				}else{
+					alert('密码不正确');
+					return;
+				}
+			}else{
+				alert('用户名不存在!')
+			}
+		})
+		function convertCookieStrToCookieObj(str){
+			if(!str){
+				return {};
+			}
+			return JSON.parse(str);
+		}
+	</script>
+</html>
